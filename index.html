@@ -11,21 +11,30 @@
     <!-- header-contiene la barra di navigazione-->
      <header>
      <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
-  <div class="container-fluid">
+  <div class="container-fluid d-flex align-items-center">
     <!--logo e titolo-->
 
-    <a class="navbar-brand d-flex align-item-center text-white" href="#">
+    <a class="navbar-brand d-flex align-items-center text-white" href="#">
       <img src="img/duck.png" alt="logo" width="40" height="40" class="me-2">
       <strong>Catalogo Libri</strong>
     </a>
     <!--link di navigazione-->
-    <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-none d-lg-flex">
+    <ul class="navbar-nav d-flex flex-row align-items-center ms-4">
         <li class="nav-item">
-          <a class="nav-link text-white" href="#">Anagrafica Utenti</a>
+          <a class="nav-link text-grey" href="#">Anagrafica Utenti</a>
         </li>
-
+        <li class="nav-item">
+          <a class="nav-link text-grey" href="#">Storico Prestiti</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-grey" href="#">Help</a>
+        </li>
     </ul>
-    
+    <!-- Form di ricerca -->
+        <form class="d-flex ms-auto" role="search">
+          <input class="form-control me-2" type="search" placeholder="Cerca" aria-label="Cerca">
+          <button class="btn btn-outline-light" type="submit">Cerca</button>
+        </form>
   </div>
      </nav>
      </header>
